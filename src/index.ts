@@ -1,1 +1,1 @@
-console.log('canvas')
+console.log('easy-webpack')
