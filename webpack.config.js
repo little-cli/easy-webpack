@@ -1,5 +1,8 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
+/**
+ * @type {import('webpack').Configuration}
+ */
 module.exports = {
   entry: './src/index.ts',
 
@@ -8,6 +11,11 @@ module.exports = {
   resolve: {
     extensions: ['.ts', '.js']
   },
+
+  devServer: {
+    host: 'fang.dev.io'
+  },
+
   module: {
     rules: [
       {
